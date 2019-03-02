@@ -1,0 +1,79 @@
+<html>
+		<head>
+		<title>Javaassignment1</title>
+		<script>
+		function power()
+		{
+            var mydiv = document.getElementById('pratham');
+            document.write(Math.pow());
+		}
+		</script>
+		<style>
+			#clr
+			{
+				color: red;
+				width: 100px;
+			}
+            #sc
+            {
+            	width: 140px;
+            	color: white;
+            }
+            fieldset
+            {
+            	width: 145px;
+            	color: grey;
+            }
+            input
+            {
+            	width: 30px;
+            	background-color: purple;
+            	color: white;
+            }
+            div
+            {
+            	background-color: black;
+            	width: 172px;
+
+            }
+            #eq
+            {
+              color: red;
+            }
+		</style>
+		</head>
+		<body>
+		<div class="pratham">
+		<fieldset>
+		<form name="f1">
+		<input type="text" name="screen" id="sc"><br><br>
+		<input type="button" value=" 1 " onclick="f1.screen.value += '1' ">
+		<input type="button" value=" 2 " onclick="f1.screen.value += '2' ">
+		<input type="button" value=" 3 " onclick="f1.screen.value += '3' ">
+		<input type="button" value=" + " onclick="f1.screen.value += '+' ">
+		<br><br>
+
+		<input type="button" value=" 4 " onclick="f1.screen.value += '4' ">
+		<input type="button" value=" 5 " onclick="f1.screen.value += '5' ">
+		<input type="button" value=" 6 " onclick="f1.screen.value += '6' ">
+		<input type="button" value=" - " onclick="f1.screen.value += '-' ">
+		<br><br>
+
+		<input type="button" value=" 7 " onclick="f1.screen.value += '7' ">
+		<input type="button" value=" 8 " onclick="f1.screen.value += '8' ">
+		<input type="button" value=" 9 " onclick="f1.screen.value += '9' ">
+		<input type="button" value=" * " onclick="f1.screen.value += '*' ">
+		<br><br>
+        
+        <input type="button" value=" 0 " onclick="f1.screen.value += '0' ">
+        <input type="button" value=" / " onclick="f1.screen.value += '/' ">
+        <input type="button" value=" ^ " onclick="power(f1.screen.value) += '^' ">
+        <input type="button" value=" = " onclick="f1.screen.value = eval(f1.screen.value) " id="eq">
+        <br><br>
+
+        <input type="button" value=" Clear All " onclick="f1.screen.value = '' " id="clr">
+		</form>
+		</fieldset>
+		</div>
+		</body>
+		</html>
